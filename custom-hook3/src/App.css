@@ -1,0 +1,13 @@
+.card {
+  transition: all 1s;
+  transform: translateX(1000px);
+  opacity: 0;
+}
+.card img {
+  width: 500px;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateX(0); /* 옵저빙되면 왼쪽으로 이동 */
+}
