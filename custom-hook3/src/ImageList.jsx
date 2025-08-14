@@ -11,7 +11,7 @@ function ImageList() {
     try {
       setIsLoading(true);
       const response = await fetch(
-        `https://picsum.photos/v2/list?page=${pageNum}&limit=5`
+        `https://picsum.photos/v2/list?page=${pageNum}&limit=12`
       );
       if (!response.ok) throw new Error("으악! 으악!");
       const data = await response.json();
